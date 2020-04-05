@@ -1,3 +1,35 @@
+Uygulamayı yaparken FrontEnd tarafında React kullanılmıştır. BackEnd tarafında Laravel API kullanılmıştır.
+
+## [BackEnd](https://github.com/eraykisabacak/Laravel-API-E-Commerce-Backend)
+## [FrontEnd](https://github.com/eraykisabacak/React-E-Commerce-Front-End)
+
+# Kurulum
+Uygulamayı çalıştırmak için BackEnd ve FrontEnd repolarını klonlamanız gerekiyor.
+
+FrontEnd klasörüne gittiğinizde öncelikle komut satırını açarak `npm install` diyerek gerekli ek paketler yüklenecektir.
+
+Daha sonra ise BackEnd klasörüne gidelim. Bu klasörde komut satırını açarak `compose install`ve `npm install` diyerek backend için gerekli paketler yüklenecektir.
+
+BackEnd çalıştırmak için komut satırını açarak `php artisan serve --port=8080` diyerek backend çalıştırabiliriz.(Uygulamanın çalışması için bunu kapatmayınız)
+
+FrontEnd çalıştırmak için `npm start` demeniz yeterli olacaktır.(Gerekli derlemeden sonra otomatik tarayıcıda sekme açılacaktır. Yine açmış olduğunuz komut satırını kapatmayınız)
+
+# Uygulama İçi Görüntüler
+
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce1.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce2.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce3.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce4.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce5.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce6.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce7.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce8.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce9.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce10.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce11.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce12.png]
+!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce13.png]
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
