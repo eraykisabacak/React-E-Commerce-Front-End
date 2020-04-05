@@ -16,19 +16,32 @@ FrontEnd çalıştırmak için `npm start` demeniz yeterli olacaktır.(Gerekli d
 
 # Uygulama İçi Görüntüler
 
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce1.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce2.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce3.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce4.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce5.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce6.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce7.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce8.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce9.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce10.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce11.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce12.png]
-!()[https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce13.png]
+### Müşteri Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce1.png)
+### Giriş Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce2.png)
+### Kayıt Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce3.png)
+### Ürün Ekleme Silme
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce4.png)
+### Sepet Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce5.png)
+### Adres Ekleme Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce6.png)
+### Admin Girişi Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce7.png)
+### Admin Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce8.png)
+### Admin Ürün Düzenleme Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce9.png)
+### Admin Kategori Düzenleme Sayfası
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce10.png)
+### Admin Kategori Ekleme
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce11.png)
+### Admin Ürün Ekleme
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce12.png)
+### Admin Gelen Sipariş Listesi
+![](https://github.com/eraykisabacak/React-E-Commerce-Front-End/blob/master/photo/ecommerce13.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
