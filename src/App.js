@@ -33,6 +33,9 @@ export default class App extends Component {
             <Route exact path='/admin/productAdd'>
               <AdminPage />
             </Route>
+            <Route exact path='/admin/orderList'>
+              <AdminPage />
+            </Route>
             <Route exact path='/admin'>
               <AdminPage />
             </Route>

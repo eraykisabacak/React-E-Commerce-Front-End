@@ -8,6 +8,7 @@ import CategoryList from '../CategoryList';
 import AdminProduct from './AdminProduct';
 import cookie from 'js-cookie';
 import { Redirect } from 'react-router-dom';
+import OrderList from './OrderList';
 
 export default class AdminPage extends Component {
   state = {
@@ -71,6 +72,9 @@ export default class AdminPage extends Component {
                 </Route>
                 <Route exact path='/admin/productAdd'>
                   <ProductAdd />
+                </Route>
+                <Route exact path='/admin/orderList'>
+                  <OrderList />
                 </Route>
               </Switch>
             </Switch>

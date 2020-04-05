@@ -37,6 +37,9 @@ export default class AdminNavi extends PureComponent {
               <NavItem>
                 <NavLink href='/admin/productAdd'>Ürün Ekle</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href='/admin/orderList'>Sipariş Listesi</NavLink>
+              </NavItem>
             </Nav>
             <Nav navbar>
               <NavItem>

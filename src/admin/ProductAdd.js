@@ -5,6 +5,7 @@ import axios from 'axios';
 export default class ProductAdd extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
     if (this.props.products) {
       this.state = {
         id: '' || this.props.products.id,
@@ -14,6 +15,7 @@ export default class ProductAdd extends Component {
         stock: '' || this.props.products.stock,
         description: '' || this.props.products.description,
         photo: '' || this.props.products.photo,
+        status: '' || this.props.products.status,
       };
     } else {
       this.state = {
@@ -23,6 +25,7 @@ export default class ProductAdd extends Component {
         stock: '',
         description: '',
         photo: '',
+        status: 0,
       };
     }
   }
@@ -40,12 +43,19 @@ export default class ProductAdd extends Component {
       console.log('Bütün alanları doldurunuz');
       return;
     }
-    const data = new FormData(event.target);
-    console.log(data);
-    fetch('http://127.0.0.1:8080/api/urun', {
-      method: 'POST',
-      body: data,
-    });
+    const data = {
+      name: this.state.name,
+      category_id: this.state.category_id,
+      price: this.state.price,
+      stock: this.state.stock,
+      description: this.state.description,
+      photo: this.state.photo,
+      status: this.state.status,
+    };
+    axios
+      .post('http://127.0.0.1:8080/api/urun', data)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
     this.resetForm();
   };
 
@@ -69,6 +79,7 @@ export default class ProductAdd extends Component {
       stock: this.state.stock,
       description: this.state.description,
       photo: this.state.photo,
+      status: this.state.status,
     };
     console.log(event.target);
     axios
@@ -121,9 +132,6 @@ export default class ProductAdd extends Component {
           />
         </FormGroup>
         <FormGroup>
-          <Input type='hidden' name='status' id='status' value='1' />
-        </FormGroup>
-        <FormGroup>
           <Label for='exampleEmail'>Fiyat</Label>
           <Input
             type='text'
@@ -166,6 +174,22 @@ export default class ProductAdd extends Component {
             value={this.state.photo}
             onChange={this.handleChange}
           />
+        </FormGroup>
+        <FormGroup check>
+          <Label check>
+            <Input
+              type='checkbox'
+              id='status'
+              name='status'
+              checked={this.state.status}
+              onChange={(e) =>
+                e.target.checked
+                  ? this.setState({ status: 1 })
+                  : this.setState({ status: 0 })
+              }
+            />{' '}
+            Durum
+          </Label>
         </FormGroup>
         <Button type='submit'>Kaydet</Button>
       </form>

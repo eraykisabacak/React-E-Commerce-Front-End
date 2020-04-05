@@ -51,7 +51,7 @@ export default class AdressAdd extends Component {
     }
     return (
       <div>
-        <h2>Sign In</h2>
+        <h2>Adres Ekleme</h2>
         <Form onSubmit={this.handleForm}>
           <Col>
             <FormGroup>

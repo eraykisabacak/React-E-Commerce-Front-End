@@ -11,12 +11,14 @@ export default class CategoryAdd extends Component {
         name: '' || this.props.category.name,
         description: '' || this.props.category.description,
         photo: '' || this.props.category.photo,
+        status: '' || this.props.category.status,
       };
     } else {
       this.state = {
         name: '',
         description: '',
         photo: '',
+        status: 0,
       };
     }
   }
@@ -27,11 +29,17 @@ export default class CategoryAdd extends Component {
       console.log('Bütün alanları doldurunuz');
       return;
     }
-    const data = new FormData(event.target);
-    fetch('http://127.0.0.1:8080/api/category', {
-      method: 'POST',
-      body: data,
-    });
+    const data = {
+      name: this.state.name,
+      category_id: this.state.category_id,
+      description: this.state.description,
+      photo: this.state.photo,
+      status: this.state.status,
+    };
+    axios
+      .post('http://127.0.0.1:8080/api/category', data)
+      .then((res) => console.log(res))
+      .catch((err) => console.error(err));
     this.resetForm();
   };
 
@@ -51,6 +59,7 @@ export default class CategoryAdd extends Component {
       category_id: this.state.category_id,
       description: this.state.description,
       photo: this.state.photo,
+      status: this.state.status,
     };
     console.log(data);
     axios
@@ -84,9 +93,6 @@ export default class CategoryAdd extends Component {
           />
         </FormGroup>
         <FormGroup>
-          <Input type='hidden' name='status' id='status' value='1' />
-        </FormGroup>
-        <FormGroup>
           <Label for='description'>Description</Label>
           <Input
             type='text'
@@ -107,6 +113,23 @@ export default class CategoryAdd extends Component {
             value={this.state.photo}
             onChange={this.handleChange}
           />
+        </FormGroup>
+        <FormGroup check>
+          <Label check>
+            <Input
+              type='checkbox'
+              id='status'
+              name='status'
+              checked={this.state.status}
+              value={this.state.status}
+              onChange={(e) =>
+                e.target.checked
+                  ? this.setState({ status: 1 })
+                  : this.setState({ status: 0 })
+              }
+            />{' '}
+            Durum
+          </Label>
         </FormGroup>
         *Tüm alanları doldurunuz yoksa kayıt edilmeyecektir
         <Button type='submit'>Kaydet</Button>

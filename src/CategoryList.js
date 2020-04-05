@@ -13,7 +13,7 @@ const override = css`
 export default class CategoryList extends Component {
   state = {
     categories: [],
-    loading: true
+    loading: true,
   };
   componentDidMount() {
     this.getCategories();
@@ -21,8 +21,8 @@ export default class CategoryList extends Component {
 
   getCategories = () => {
     fetch('http://127.0.0.1:8080/api/category')
-      .then(response => response.json())
-      .then(data => this.setState({ categories: data, loading: false }));
+      .then((response) => response.json())
+      .then((data) => this.setState({ categories: data, loading: false }));
   };
   render() {
     return (
@@ -39,17 +39,21 @@ export default class CategoryList extends Component {
               />
             </div>
           ) : (
-            this.state.categories.map(category => (
-              <ListGroupItem
-                active={
-                  category.name === this.props.currentCategory ? true : false
-                }
-                key={category.id}
-                onClick={() => this.props.changeCategory(category)}
-              >
-                {category.name}
-              </ListGroupItem>
-            ))
+            this.state.categories.map((category) =>
+              category.status === 1 ? (
+                <ListGroupItem
+                  active={
+                    category.name === this.props.currentCategory ? true : false
+                  }
+                  key={category.id}
+                  onClick={() => this.props.changeCategory(category)}
+                >
+                  {category.name}
+                </ListGroupItem>
+              ) : (
+                ''
+              )
+            )
           )}
         </ListGroup>
         {/* <h4>{this.props.currentCategory}</h4> */}

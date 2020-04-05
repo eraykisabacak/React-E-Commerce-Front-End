@@ -8,12 +8,9 @@ export default class ProductList extends Component {
     return (
       <div>
         <h3>Product List</h3>
-        <h4>
-          {/* {this.props.currentCategory}
-          {this.props.curretCategoryId !== 0 ? this.props.curretCategoryId : ''} */}
-        </h4>
+        <h4></h4>
         <Row>
-          {this.props.products.map(product =>
+          {this.props.products.map((product) =>
             (this.props.curretCategoryId === product.category_id ||
               this.props.curretCategoryId === 0) &&
             product.status === 1 ? (
